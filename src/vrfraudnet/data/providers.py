@@ -133,7 +133,7 @@ def load_d3(raw_dir: Path) -> LoadedDataset:
     base = [c for c in df.columns if c not in drop and c not in v_cols]
     frame = pd.DataFrame({"__id": df["TransactionID"].astype(str).to_numpy(), "__label": df["isFraud"].astype(int).to_numpy(), "__time": df["TransactionDT"].astype(float).to_numpy()})
     frame = pd.concat([frame, df[base + v_cols].reset_index(drop=True)], axis=1)
-    cat = [c for c in base if df[c].dtype == object]
+    cat = [c for c in base if not pd.api.types.is_numeric_dtype(df[c])]
     return LoadedDataset(spec, frame, None, base + v_cols, {"categorical": cat, "v_columns": v_cols, "numeric": [c for c in base if c not in cat],
                                                            "evidence_fields": ["TransactionAmt", "ProductCD", "card4", "card6"], "realised_n_features": len(base) + len(v_cols)})
 
