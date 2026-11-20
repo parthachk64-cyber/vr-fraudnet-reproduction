@@ -1,0 +1,219 @@
+{
+ "title": "Per-transaction inference latency under common-path, escalation-path, and mixed-path routing.",
+ "columns": [
+  "#",
+  "Method",
+  "p50 (ms)",
+  "p95 (ms)",
+  "p99 (ms)",
+  "Meets <200 ms p99 budget"
+ ],
+ "rows": [
+  {
+   "_row": 1,
+   "#": {
+    "value": 1.0
+   },
+   "Method": "Logistic Regression",
+   "p50 (ms)": {
+    "value": 0.12
+   },
+   "p95 (ms)": {
+    "value": 0.19
+   },
+   "p99 (ms)": {
+    "value": 0.34
+   },
+   "Meets <200 ms p99 budget": "Yes"
+  },
+  {
+   "_row": 2,
+   "#": {
+    "value": 2.0
+   },
+   "Method": "Isolation Forest",
+   "p50 (ms)": {
+    "value": 0.34
+   },
+   "p95 (ms)": {
+    "value": 0.48
+   },
+   "p99 (ms)": {
+    "value": 0.78
+   },
+   "Meets <200 ms p99 budget": "Yes"
+  },
+  {
+   "_row": 3,
+   "#": {
+    "value": 3.0
+   },
+   "Method": "MLP",
+   "p50 (ms)": {
+    "value": 1.45
+   },
+   "p95 (ms)": {
+    "value": 1.87
+   },
+   "p99 (ms)": {
+    "value": 2.34
+   },
+   "Meets <200 ms p99 budget": "Yes"
+  },
+  {
+   "_row": 4,
+   "#": {
+    "value": 4.0
+   },
+   "Method": "1D-CNN",
+   "p50 (ms)": {
+    "value": 2.12
+   },
+   "p95 (ms)": {
+    "value": 2.78
+   },
+   "p99 (ms)": {
+    "value": 3.45
+   },
+   "Meets <200 ms p99 budget": "Yes"
+  },
+  {
+   "_row": 5,
+   "#": {
+    "value": 5.0
+   },
+   "Method": "LSTM",
+   "p50 (ms)": {
+    "value": 3.67
+   },
+   "p95 (ms)": {
+    "value": 4.56
+   },
+   "p99 (ms)": {
+    "value": 5.78
+   },
+   "Meets <200 ms p99 budget": "Yes"
+  },
+  {
+   "_row": 6,
+   "#": {
+    "value": 6.0
+   },
+   "Method": "Random Forest",
+   "p50 (ms)": {
+    "value": 0.89
+   },
+   "p95 (ms)": {
+    "value": 1.45
+   },
+   "p99 (ms)": {
+    "value": 2.12
+   },
+   "Meets <200 ms p99 budget": "Yes"
+  },
+  {
+   "_row": 7,
+   "#": {
+    "value": 7.0
+   },
+   "Method": "XGBoost",
+   "p50 (ms)": {
+    "value": 0.45
+   },
+   "p95 (ms)": {
+    "value": 0.78
+   },
+   "p99 (ms)": {
+    "value": 1.23
+   },
+   "Meets <200 ms p99 budget": "Yes"
+  },
+  {
+   "_row": 8,
+   "#": {
+    "value": 8.0
+   },
+   "Method": "LightGBM",
+   "p50 (ms)": {
+    "value": 0.56
+   },
+   "p95 (ms)": {
+    "value": 0.89
+   },
+   "p99 (ms)": {
+    "value": 1.45
+   },
+   "Meets <200 ms p99 budget": "Yes"
+  },
+  {
+   "_row": 9,
+   "#": {
+    "value": 9.0
+   },
+   "Method": "TabTransformer",
+   "p50 (ms)": {
+    "value": 6.78
+   },
+   "p95 (ms)": {
+    "value": 8.23
+   },
+   "p99 (ms)": {
+    "value": 10.45
+   },
+   "Meets <200 ms p99 budget": "Yes"
+  },
+  {
+   "_row": 10,
+   "#": {
+    "value": 10.0
+   },
+   "Method": "VR-FraudNet, common path, 95% of tx",
+   "p50 (ms)": {
+    "value": 6.34
+   },
+   "p95 (ms)": {
+    "value": 8.12
+   },
+   "p99 (ms)": {
+    "value": 10.23
+   },
+   "Meets <200 ms p99 budget": "Yes"
+  },
+  {
+   "_row": 11,
+   "#": "10'",
+   "Method": "VR-FraudNet, escalation path, 5% of tx",
+   "p50 (ms)": {
+    "value": 142.3
+   },
+   "p95 (ms)": {
+    "value": 168.45
+   },
+   "p99 (ms)": {
+    "value": 175.23
+   },
+   "Meets <200 ms p99 budget": "Yes"
+  },
+  {
+   "_row": 12,
+   "#": "10\"",
+   "Method": "VR-FraudNet, conservative mixed-path bound",
+   "p50 (ms)": {
+    "value": 6.45
+   },
+   "p95 (ms)": {
+    "value": 12.34
+   },
+   "p99 (ms)": {
+    "value": 175.23
+   },
+   "Meets <200 ms p99 budget": "Yes"
+  }
+ ],
+ "source": {
+  "document": "Supplementary Material 1 (44163_2026_2355_MOESM1_ESM.docx)",
+  "table": "Supplementary Table S3b",
+  "kind": "supplement_docx",
+  "row_index_base": 1
+ }
+}

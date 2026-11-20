@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article below (preferred). The software has its own metadata at the top level."
+title: "vr-fraudnet-reproduction: a companion implementation of VR-FraudNet"
+type: software
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/parthachk64-cyber/vr-fraudnet-reproduction"
+abstract: >-
+  Independently written Python implementation of the five-stage VR-FraudNet pipeline
+  (spectral encoder, focal LightGBM triage, schema-constrained rationale model, deterministic
+  verifier, isotonic mixer with split-conformal sets), with data adapters, baselines, table
+  builders and a mathematical audit of the published article. Not the authors' code.
+authors:
+  - family-names: Chakraborty
+    given-names: Partha
+    alias: parthachk64-cyber
+references:
+  - type: software
+    title: "VR-FraudNet reproducibility package (authors' reference repository)"
+    url: "https://github.com/abdulbasit12312/VR-FraudNet"
+    notes: "Examined, not copied. See docs/UPSTREAM.md."
+preferred-citation:
+  type: article
+  title: "Grounding language models with deterministic verifiers for fraud detection"
+  authors:
+    - { family-names: Sourav, given-names: Md Sultanul Arefin }
+    - { family-names: Rozario, given-names: Evha }
+    - { family-names: Islam, given-names: Md Ashiqul }
+    - { family-names: Chy, given-names: Kaniz Sultana }
+    - { family-names: Akter, given-names: Samia }
+    - { family-names: Shahiduzzaman, given-names: Md }
+    - { family-names: Hossain, given-names: Mohammad Sazzad }
+    - { family-names: Kabtia, given-names: Maria }
+    - { family-names: Chakraborty, given-names: Partha }
+    - { family-names: Basit, given-names: Abdul }
+  journal: "Discover Artificial Intelligence"
+  volume: 6
+  number: "1403"
+  year: 2026
+  doi: "10.1007/s44163-026-02355-0"

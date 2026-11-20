@@ -1,0 +1,109 @@
+{
+ "title": "Empirical miscoverage under standard and drift-weighted split-conformal calibration.",
+ "columns": [
+  "Setting",
+  "Dataset",
+  "alpha target",
+  "n_cal",
+  "Theoretical bound",
+  "Empirical miscoverage"
+ ],
+ "rows": [
+  {
+   "_row": 1,
+   "Setting": "Standard",
+   "Dataset": "D1 BAF Base",
+   "alpha target": {
+    "value": 0.05
+   },
+   "n_cal": {
+    "value": 100000.0
+   },
+   "Theoretical bound": {
+    "value": 0.05001
+   },
+   "Empirical miscoverage": {
+    "value": 0.0487,
+    "sd": 0.0021
+   }
+  },
+  {
+   "_row": 2,
+   "Setting": "Standard",
+   "Dataset": "D2 AMLworld HI-Small",
+   "alpha target": {
+    "value": 0.05
+   },
+   "n_cal": {
+    "value": 100000.0
+   },
+   "Theoretical bound": {
+    "value": 0.05001
+   },
+   "Empirical miscoverage": {
+    "value": 0.0498,
+    "sd": 0.0024
+   }
+  },
+  {
+   "_row": 3,
+   "Setting": "Standard",
+   "Dataset": "D3 IEEE-CIS",
+   "alpha target": {
+    "value": 0.05
+   },
+   "n_cal": {
+    "value": 100000.0
+   },
+   "Theoretical bound": {
+    "value": 0.05001
+   },
+   "Empirical miscoverage": {
+    "value": 0.0476,
+    "sd": 0.0019
+   }
+  },
+  {
+   "_row": 4,
+   "Setting": "Drift-weighted",
+   "Dataset": "D1 BAF Variant III",
+   "alpha target": {
+    "value": 0.05
+   },
+   "n_cal": {
+    "value": 100000.0
+   },
+   "Theoretical bound": {
+    "value": 0.05001
+   },
+   "Empirical miscoverage": {
+    "value": 0.0494,
+    "sd": 0.0028
+   }
+  },
+  {
+   "_row": 5,
+   "Setting": "Drift-weighted",
+   "Dataset": "D4 Elliptic++ shock",
+   "alpha target": {
+    "value": 0.05
+   },
+   "n_cal": {
+    "value": 50000.0
+   },
+   "Theoretical bound": {
+    "value": 0.05002
+   },
+   "Empirical miscoverage": {
+    "value": 0.0489,
+    "sd": 0.0034
+   }
+  }
+ ],
+ "source": {
+  "document": "Supplementary Material 1 (44163_2026_2355_MOESM1_ESM.docx)",
+  "table": "Supplementary Table S4a",
+  "kind": "supplement_docx",
+  "row_index_base": 1
+ }
+}

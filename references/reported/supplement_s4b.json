@@ -1,0 +1,96 @@
+{
+ "title": "Verifier rejection rate for clean and prompt-injection rationale cases.",
+ "columns": [
+  "Held-out type",
+  "Dataset",
+  "eps_h target",
+  "Empirical Pr[V(r)=0]",
+  "Empirical target pass"
+ ],
+ "rows": [
+  {
+   "_row": 1,
+   "Held-out type": "Clean",
+   "Dataset": "D1 BAF Base",
+   "eps_h target": {
+    "value": 0.05
+   },
+   "Empirical Pr[V(r)=0]": {
+    "value": 0.0387,
+    "sd": 0.0042
+   },
+   "Empirical target pass": "Yes"
+  },
+  {
+   "_row": 2,
+   "Held-out type": "Clean",
+   "Dataset": "D2 AMLworld HI-Small",
+   "eps_h target": {
+    "value": 0.05
+   },
+   "Empirical Pr[V(r)=0]": {
+    "value": 0.0432,
+    "sd": 0.0048
+   },
+   "Empirical target pass": "Yes"
+  },
+  {
+   "_row": 3,
+   "Held-out type": "Clean",
+   "Dataset": "D3 IEEE-CIS",
+   "eps_h target": {
+    "value": 0.05
+   },
+   "Empirical Pr[V(r)=0]": {
+    "value": 0.0356,
+    "sd": 0.0039
+   },
+   "Empirical target pass": "Yes"
+  },
+  {
+   "_row": 4,
+   "Held-out type": "Adversarial, PromptInject v1.1",
+   "Dataset": "D1 BAF Base",
+   "eps_h target": {
+    "value": 0.05
+   },
+   "Empirical Pr[V(r)=0]": {
+    "value": 0.0623,
+    "sd": 0.0053
+   },
+   "Empirical target pass": "No"
+  },
+  {
+   "_row": 5,
+   "Held-out type": "Adversarial, PromptInject v1.1",
+   "Dataset": "D2 AMLworld HI-Small",
+   "eps_h target": {
+    "value": 0.05
+   },
+   "Empirical Pr[V(r)=0]": {
+    "value": 0.0687,
+    "sd": 0.0064
+   },
+   "Empirical target pass": "No"
+  },
+  {
+   "_row": 6,
+   "Held-out type": "Adversarial, PromptInject v1.1",
+   "Dataset": "D3 IEEE-CIS",
+   "eps_h target": {
+    "value": 0.05
+   },
+   "Empirical Pr[V(r)=0]": {
+    "value": 0.0598,
+    "sd": 0.0056
+   },
+   "Empirical target pass": "No"
+  }
+ ],
+ "source": {
+  "document": "Supplementary Material 1 (44163_2026_2355_MOESM1_ESM.docx)",
+  "table": "Supplementary Table S4b",
+  "kind": "supplement_docx",
+  "row_index_base": 1
+ }
+}

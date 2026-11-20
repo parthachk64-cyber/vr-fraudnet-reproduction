@@ -1,0 +1,10 @@
+{
+  "transaction_id": "TX_SYN_0001",
+  "prediction_time": 1000000.0,
+  "fields": {"amount": 9800.0, "recent_transfer_count": 7, "payment_type": "wire", "account_age_days": 3},
+  "event_times": {"last_transfer_time": 998800.0, "account_opened_time": 740800.0},
+  "entities": {"origin": "ACC_SYN_001", "beneficiary": "ACC_SYN_900"},
+  "evidence_index": {"E_AMT": "amount", "E_CNT": "recent_transfer_count", "E_PAY": "payment_type", "E_AGE": "account_age_days",
+                     "E_LAST": "last_transfer_time", "E_OPEN": "account_opened_time", "E_ORG": "origin", "E_BEN": "beneficiary"},
+  "graph": {"edges": [["ACC_SYN_001", "ACC_SYN_077", 999400.0], ["ACC_SYN_077", "ACC_SYN_900", 999700.0]], "complete": true, "radius": 3}
+}

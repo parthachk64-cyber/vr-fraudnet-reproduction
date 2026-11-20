@@ -1,0 +1,89 @@
+{
+ "source": {
+  "document": "Sourav et al., Discover Artificial Intelligence 6:1403 (2026), doi:10.1007/s44163-026-02355-0",
+  "page": 24,
+  "table": "Table 6",
+  "kind": "main_text_table",
+  "transcribed_by": "tools/transcribe_reported.py"
+ },
+ "n_pairs": 30,
+ "V_max": 465,
+ "qualifiers": [
+  "Logistic regression has no V printed ('-')",
+  "Effect-size convention is not named in the paper"
+ ],
+ "rows": [
+  {
+   "baseline": "Logistic regression",
+   "mean_delta_auprc_pp": 24.68,
+   "wilcoxon_V": null,
+   "raw_p_one_sided": 9.31e-10,
+   "effect_size": 1.0,
+   "holm_adjusted_p": 8.38e-09
+  },
+  {
+   "baseline": "Isolation forest",
+   "mean_delta_auprc_pp": 27.73,
+   "wilcoxon_V": 465,
+   "raw_p_one_sided": 9.31e-10,
+   "effect_size": 1.0,
+   "holm_adjusted_p": 8.38e-09
+  },
+  {
+   "baseline": "MLP",
+   "mean_delta_auprc_pp": 16.28,
+   "wilcoxon_V": 465,
+   "raw_p_one_sided": 9.31e-10,
+   "effect_size": 0.96,
+   "holm_adjusted_p": 8.38e-09
+  },
+  {
+   "baseline": "1D-CNN",
+   "mean_delta_auprc_pp": 14.55,
+   "wilcoxon_V": 465,
+   "raw_p_one_sided": 9.31e-10,
+   "effect_size": 0.94,
+   "holm_adjusted_p": 8.38e-09
+  },
+  {
+   "baseline": "LSTM",
+   "mean_delta_auprc_pp": 12.38,
+   "wilcoxon_V": 465,
+   "raw_p_one_sided": 9.31e-10,
+   "effect_size": 0.91,
+   "holm_adjusted_p": 8.38e-09
+  },
+  {
+   "baseline": "Random Forest",
+   "mean_delta_auprc_pp": 10.9,
+   "wilcoxon_V": 465,
+   "raw_p_one_sided": 9.31e-10,
+   "effect_size": 0.88,
+   "holm_adjusted_p": 8.38e-09
+  },
+  {
+   "baseline": "XGBoost",
+   "mean_delta_auprc_pp": 7.31,
+   "wilcoxon_V": 462,
+   "raw_p_one_sided": 1.86e-09,
+   "effect_size": 0.83,
+   "holm_adjusted_p": 8.38e-09
+  },
+  {
+   "baseline": "LightGBM",
+   "mean_delta_auprc_pp": 6.05,
+   "wilcoxon_V": 458,
+   "raw_p_one_sided": 4.66e-09,
+   "effect_size": 0.79,
+   "holm_adjusted_p": 9.32e-09
+  },
+  {
+   "baseline": "TabTransformer",
+   "mean_delta_auprc_pp": 3.81,
+   "wilcoxon_V": 442,
+   "raw_p_one_sided": 1.4e-07,
+   "effect_size": 0.66,
+   "holm_adjusted_p": 1.4e-07
+  }
+ ]
+}

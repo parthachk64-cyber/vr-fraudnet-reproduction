@@ -1,0 +1,10 @@
+{
+  "verdict": "legitimate",
+  "probability": 0.1,
+  "claims": [
+    {"type": "numeric_comparison", "field": "amount", "op": "<", "value": 100, "evidence_id": "E_AMT"},
+    {"type": "numeric_comparison", "field": "recent_transfer_count", "op": "<", "value": 2, "evidence_id": "E_CNT"},
+    {"type": "graph_path", "field": "origin", "op": "path_absent", "value": ["ACC_SYN_900", 2], "evidence_id": "E_ORG"}
+  ],
+  "evidence_refs": ["E_AMT", "E_CNT", "E_ORG"]
+}

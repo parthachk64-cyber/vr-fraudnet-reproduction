@@ -1,0 +1,12 @@
+{
+  "verdict": "fraud",
+  "probability": 0.91,
+  "claims": [
+    {"type": "numeric_comparison", "field": "amount", "op": ">=", "value": 5000, "evidence_id": "E_AMT"},
+    {"type": "set_membership", "field": "payment_type", "op": "in", "value": ["wire", "ach"], "evidence_id": "E_PAY"},
+    {"type": "temporal_relation", "field": "last_transfer_time", "op": "within", "value": 3600, "evidence_id": "E_LAST"},
+    {"type": "graph_path", "field": "origin", "op": "path_exists", "value": ["ACC_SYN_900", 2], "evidence_id": "E_ORG"},
+    {"type": "entity_match", "field": "beneficiary", "op": "==", "value": "ACC_SYN_900", "evidence_id": "E_BEN"}
+  ],
+  "evidence_refs": ["E_AMT", "E_BEN", "E_LAST", "E_ORG", "E_PAY"]
+}

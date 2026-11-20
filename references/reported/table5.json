@@ -1,0 +1,720 @@
+{
+ "source": {
+  "document": "Sourav et al., Discover Artificial Intelligence 6:1403 (2026), doi:10.1007/s44163-026-02355-0",
+  "page": 21,
+  "table": "Table 5a-c",
+  "kind": "main_text_table",
+  "transcribed_by": "tools/transcribe_reported.py"
+ },
+ "metric_units": "AUPRC/ROC-AUC/F1/Recall@top-1%/MCC are fractions in [0,1]; +- is the sample SD over ten seeds (Sec. 3.8.3)",
+ "panels": {
+  "5a": {
+   "title": "D1 BAF Base (1.10% fraud prevalence)",
+   "page": 21,
+   "rows": [
+    {
+     "method": "Logistic regression",
+     "AUPRC": {
+      "mean": 0.3245,
+      "sd": 0.0089
+     },
+     "ROC-AUC": {
+      "mean": 0.8312,
+      "sd": 0.0048
+     },
+     "F1": {
+      "mean": 0.3567,
+      "sd": 0.0095
+     },
+     "Recall@top-1%": {
+      "mean": 0.5245,
+      "sd": 0.0142
+     },
+     "MCC": {
+      "mean": 0.3478,
+      "sd": 0.0102
+     }
+    },
+    {
+     "method": "Isolation forest",
+     "AUPRC": {
+      "mean": 0.2987,
+      "sd": 0.0103
+     },
+     "ROC-AUC": {
+      "mean": 0.8156,
+      "sd": 0.0056
+     },
+     "F1": {
+      "mean": 0.3237,
+      "sd": 0.0108
+     },
+     "Recall@top-1%": {
+      "mean": 0.4912,
+      "sd": 0.0162
+     },
+     "MCC": {
+      "mean": 0.3198,
+      "sd": 0.0118
+     }
+    },
+    {
+     "method": "MLP",
+     "AUPRC": {
+      "mean": 0.4123,
+      "sd": 0.0078
+     },
+     "ROC-AUC": {
+      "mean": 0.8723,
+      "sd": 0.0042
+     },
+     "F1": {
+      "mean": 0.4378,
+      "sd": 0.0083
+     },
+     "Recall@top-1%": {
+      "mean": 0.6098,
+      "sd": 0.0123
+     },
+     "MCC": {
+      "mean": 0.4287,
+      "sd": 0.0089
+     }
+    },
+    {
+     "method": "1D-CNN",
+     "AUPRC": {
+      "mean": 0.4287,
+      "sd": 0.0083
+     },
+     "ROC-AUC": {
+      "mean": 0.8784,
+      "sd": 0.0044
+     },
+     "F1": {
+      "mean": 0.4467,
+      "sd": 0.0089
+     },
+     "Recall@top-1%": {
+      "mean": 0.6157,
+      "sd": 0.0128
+     },
+     "MCC": {
+      "mean": 0.4356,
+      "sd": 0.0094
+     }
+    },
+    {
+     "method": "LSTM",
+     "AUPRC": {
+      "mean": 0.4456,
+      "sd": 0.008
+     },
+     "ROC-AUC": {
+      "mean": 0.8845,
+      "sd": 0.0042
+     },
+     "F1": {
+      "mean": 0.4584,
+      "sd": 0.0085
+     },
+     "Recall@top-1%": {
+      "mean": 0.6298,
+      "sd": 0.0124
+     },
+     "MCC": {
+      "mean": 0.4498,
+      "sd": 0.0091
+     }
+    },
+    {
+     "method": "Random forest",
+     "AUPRC": {
+      "mean": 0.4534,
+      "sd": 0.0072
+     },
+     "ROC-AUC": {
+      "mean": 0.8867,
+      "sd": 0.0038
+     },
+     "F1": {
+      "mean": 0.4623,
+      "sd": 0.0079
+     },
+     "Recall@top-1%": {
+      "mean": 0.6342,
+      "sd": 0.0117
+     },
+     "MCC": {
+      "mean": 0.4534,
+      "sd": 0.0085
+     }
+    },
+    {
+     "method": "XGBoost",
+     "AUPRC": {
+      "mean": 0.4823,
+      "sd": 0.0067
+     },
+     "ROC-AUC": {
+      "mean": 0.8967,
+      "sd": 0.0035
+     },
+     "F1": {
+      "mean": 0.4845,
+      "sd": 0.0073
+     },
+     "Recall@top-1%": {
+      "mean": 0.6587,
+      "sd": 0.0107
+     },
+     "MCC": {
+      "mean": 0.4734,
+      "sd": 0.0079
+     }
+    },
+    {
+     "method": "LightGBM",
+     "AUPRC": {
+      "mean": 0.4912,
+      "sd": 0.0064
+     },
+     "ROC-AUC": {
+      "mean": 0.9012,
+      "sd": 0.0034
+     },
+     "F1": {
+      "mean": 0.4923,
+      "sd": 0.007
+     },
+     "Recall@top-1%": {
+      "mean": 0.6651,
+      "sd": 0.0103
+     },
+     "MCC": {
+      "mean": 0.4823,
+      "sd": 0.0076
+     }
+    },
+    {
+     "method": "TabTransformer",
+     "AUPRC": {
+      "mean": 0.5012,
+      "sd": 0.0061
+     },
+     "ROC-AUC": {
+      "mean": 0.9078,
+      "sd": 0.0032
+     },
+     "F1": {
+      "mean": 0.4998,
+      "sd": 0.0067
+     },
+     "Recall@top-1%": {
+      "mean": 0.6789,
+      "sd": 0.0098
+     },
+     "MCC": {
+      "mean": 0.4912,
+      "sd": 0.0072
+     }
+    },
+    {
+     "method": "VR-FraudNet",
+     "AUPRC": {
+      "mean": 0.5247,
+      "sd": 0.0058
+     },
+     "ROC-AUC": {
+      "mean": 0.9156,
+      "sd": 0.003
+     },
+     "F1": {
+      "mean": 0.5181,
+      "sd": 0.0063
+     },
+     "Recall@top-1%": {
+      "mean": 0.6912,
+      "sd": 0.0092
+     },
+     "MCC": {
+      "mean": 0.5063,
+      "sd": 0.0069
+     }
+    }
+   ]
+  },
+  "5b": {
+   "title": "D2 AMLworld HI-Small (0.10% fraud prevalence)",
+   "page": 21,
+   "rows": [
+    {
+     "method": "Logistic regression",
+     "AUPRC": {
+      "mean": 0.2645,
+      "sd": 0.0098
+     },
+     "ROC-AUC": {
+      "mean": 0.9234,
+      "sd": 0.0033
+     },
+     "F1": {
+      "mean": 0.3287,
+      "sd": 0.0102
+     },
+     "Recall@top-1%": {
+      "mean": 0.4567,
+      "sd": 0.0148
+     },
+     "MCC": {
+      "mean": 0.2987,
+      "sd": 0.0103
+     }
+    },
+    {
+     "method": "Isolation forest",
+     "AUPRC": {
+      "mean": 0.2398,
+      "sd": 0.0108
+     },
+     "ROC-AUC": {
+      "mean": 0.9123,
+      "sd": 0.0038
+     },
+     "F1": {
+      "mean": 0.2987,
+      "sd": 0.0112
+     },
+     "Recall@top-1%": {
+      "mean": 0.4234,
+      "sd": 0.0162
+     },
+     "MCC": {
+      "mean": 0.2645,
+      "sd": 0.0117
+     }
+    },
+    {
+     "method": "MLP",
+     "AUPRC": {
+      "mean": 0.3287,
+      "sd": 0.0089
+     },
+     "ROC-AUC": {
+      "mean": 0.9412,
+      "sd": 0.0028
+     },
+     "F1": {
+      "mean": 0.4012,
+      "sd": 0.0093
+     },
+     "Recall@top-1%": {
+      "mean": 0.5234,
+      "sd": 0.0132
+     },
+     "MCC": {
+      "mean": 0.3645,
+      "sd": 0.0091
+     }
+    },
+    {
+     "method": "1D-CNN",
+     "AUPRC": {
+      "mean": 0.3478,
+      "sd": 0.0092
+     },
+     "ROC-AUC": {
+      "mean": 0.9456,
+      "sd": 0.0027
+     },
+     "F1": {
+      "mean": 0.4187,
+      "sd": 0.0095
+     },
+     "Recall@top-1%": {
+      "mean": 0.5398,
+      "sd": 0.0134
+     },
+     "MCC": {
+      "mean": 0.3812,
+      "sd": 0.0093
+     }
+    },
+    {
+     "method": "LSTM",
+     "AUPRC": {
+      "mean": 0.3823,
+      "sd": 0.0086
+     },
+     "ROC-AUC": {
+      "mean": 0.9523,
+      "sd": 0.0024
+     },
+     "F1": {
+      "mean": 0.4423,
+      "sd": 0.009
+     },
+     "Recall@top-1%": {
+      "mean": 0.5723,
+      "sd": 0.0124
+     },
+     "MCC": {
+      "mean": 0.4078,
+      "sd": 0.0085
+     }
+    },
+    {
+     "method": "Random forest",
+     "AUPRC": {
+      "mean": 0.4012,
+      "sd": 0.0083
+     },
+     "ROC-AUC": {
+      "mean": 0.9587,
+      "sd": 0.0023
+     },
+     "F1": {
+      "mean": 0.4612,
+      "sd": 0.0086
+     },
+     "Recall@top-1%": {
+      "mean": 0.5934,
+      "sd": 0.0118
+     },
+     "MCC": {
+      "mean": 0.4287,
+      "sd": 0.008
+     }
+    },
+    {
+     "method": "XGBoost",
+     "AUPRC": {
+      "mean": 0.4523,
+      "sd": 0.0078
+     },
+     "ROC-AUC": {
+      "mean": 0.9645,
+      "sd": 0.0021
+     },
+     "F1": {
+      "mean": 0.4934,
+      "sd": 0.008
+     },
+     "Recall@top-1%": {
+      "mean": 0.6234,
+      "sd": 0.011
+     },
+     "MCC": {
+      "mean": 0.4567,
+      "sd": 0.007
+     }
+    },
+    {
+     "method": "LightGBM",
+     "AUPRC": {
+      "mean": 0.4712,
+      "sd": 0.0075
+     },
+     "ROC-AUC": {
+      "mean": 0.9678,
+      "sd": 0.002
+     },
+     "F1": {
+      "mean": 0.5087,
+      "sd": 0.0077
+     },
+     "Recall@top-1%": {
+      "mean": 0.6398,
+      "sd": 0.0107
+     },
+     "MCC": {
+      "mean": 0.4712,
+      "sd": 0.007
+     }
+    },
+    {
+     "method": "TabTransformer",
+     "AUPRC": {
+      "mean": 0.5137,
+      "sd": 0.0069
+     },
+     "ROC-AUC": {
+      "mean": 0.9745,
+      "sd": 0.0018
+     },
+     "F1": {
+      "mean": 0.5612,
+      "sd": 0.0072
+     },
+     "Recall@top-1%": {
+      "mean": 0.6912,
+      "sd": 0.0098
+     },
+     "MCC": {
+      "mean": 0.5198,
+      "sd": 0.0066
+     }
+    },
+    {
+     "method": "VR-FraudNet",
+     "AUPRC": {
+      "mean": 0.5824,
+      "sd": 0.0065
+     },
+     "ROC-AUC": {
+      "mean": 0.9812,
+      "sd": 0.0016
+     },
+     "F1": {
+      "mean": 0.6087,
+      "sd": 0.0061
+     },
+     "Recall@top-1%": {
+      "mean": 0.7384,
+      "sd": 0.0092
+     },
+     "MCC": {
+      "mean": 0.5612,
+      "sd": 0.0062
+     }
+    }
+   ]
+  },
+  "5c": {
+   "title": "D3 IEEE-CIS, fixed chronological TransactionDT holdout (3.50% fraud prevalence)",
+   "page": 21,
+   "rows": [
+    {
+     "method": "Logistic regression",
+     "AUPRC": {
+      "mean": 0.5234,
+      "sd": 0.0073
+     },
+     "ROC-AUC": {
+      "mean": 0.8412,
+      "sd": 0.004
+     },
+     "F1": {
+      "mean": 0.5231,
+      "sd": 0.0078
+     },
+     "Recall@top-1%": {
+      "mean": 0.4567,
+      "sd": 0.0098
+     },
+     "MCC": {
+      "mean": 0.5034,
+      "sd": 0.0083
+     }
+    },
+    {
+     "method": "Isolation forest",
+     "AUPRC": {
+      "mean": 0.4823,
+      "sd": 0.0084
+     },
+     "ROC-AUC": {
+      "mean": 0.8234,
+      "sd": 0.0046
+     },
+     "F1": {
+      "mean": 0.4923,
+      "sd": 0.0089
+     },
+     "Recall@top-1%": {
+      "mean": 0.4234,
+      "sd": 0.0112
+     },
+     "MCC": {
+      "mean": 0.4712,
+      "sd": 0.0094
+     }
+    },
+    {
+     "method": "MLP",
+     "AUPRC": {
+      "mean": 0.6234,
+      "sd": 0.0066
+     },
+     "ROC-AUC": {
+      "mean": 0.8823,
+      "sd": 0.0034
+     },
+     "F1": {
+      "mean": 0.5934,
+      "sd": 0.007
+     },
+     "Recall@top-1%": {
+      "mean": 0.5234,
+      "sd": 0.009
+     },
+     "MCC": {
+      "mean": 0.5687,
+      "sd": 0.0075
+     }
+    },
+    {
+     "method": "1D-CNN",
+     "AUPRC": {
+      "mean": 0.6398,
+      "sd": 0.0064
+     },
+     "ROC-AUC": {
+      "mean": 0.8867,
+      "sd": 0.0033
+     },
+     "F1": {
+      "mean": 0.6087,
+      "sd": 0.0068
+     },
+     "Recall@top-1%": {
+      "mean": 0.5345,
+      "sd": 0.0088
+     },
+     "MCC": {
+      "mean": 0.5823,
+      "sd": 0.0072
+     }
+    },
+    {
+     "method": "LSTM",
+     "AUPRC": {
+      "mean": 0.6534,
+      "sd": 0.0061
+     },
+     "ROC-AUC": {
+      "mean": 0.8923,
+      "sd": 0.0031
+     },
+     "F1": {
+      "mean": 0.6198,
+      "sd": 0.0066
+     },
+     "Recall@top-1%": {
+      "mean": 0.5478,
+      "sd": 0.0085
+     },
+     "MCC": {
+      "mean": 0.5934,
+      "sd": 0.007
+     }
+    },
+    {
+     "method": "Random forest",
+     "AUPRC": {
+      "mean": 0.6712,
+      "sd": 0.0058
+     },
+     "ROC-AUC": {
+      "mean": 0.8989,
+      "sd": 0.003
+     },
+     "F1": {
+      "mean": 0.6312,
+      "sd": 0.0063
+     },
+     "Recall@top-1%": {
+      "mean": 0.5612,
+      "sd": 0.0082
+     },
+     "MCC": {
+      "mean": 0.6087,
+      "sd": 0.0068
+     }
+    },
+    {
+     "method": "XGBoost",
+     "AUPRC": {
+      "mean": 0.6987,
+      "sd": 0.0055
+     },
+     "ROC-AUC": {
+      "mean": 0.9089,
+      "sd": 0.0028
+     },
+     "F1": {
+      "mean": 0.6487,
+      "sd": 0.0061
+     },
+     "Recall@top-1%": {
+      "mean": 0.5812,
+      "sd": 0.0078
+     },
+     "MCC": {
+      "mean": 0.6287,
+      "sd": 0.0065
+     }
+    },
+    {
+     "method": "LightGBM",
+     "AUPRC": {
+      "mean": 0.7087,
+      "sd": 0.0053
+     },
+     "ROC-AUC": {
+      "mean": 0.9134,
+      "sd": 0.0027
+     },
+     "F1": {
+      "mean": 0.6587,
+      "sd": 0.0059
+     },
+     "Recall@top-1%": {
+      "mean": 0.5891,
+      "sd": 0.0076
+     },
+     "MCC": {
+      "mean": 0.6378,
+      "sd": 0.0063
+     }
+    },
+    {
+     "method": "TabTransformer",
+     "AUPRC": {
+      "mean": 0.7234,
+      "sd": 0.0051
+     },
+     "ROC-AUC": {
+      "mean": 0.9201,
+      "sd": 0.0026
+     },
+     "F1": {
+      "mean": 0.6712,
+      "sd": 0.0057
+     },
+     "Recall@top-1%": {
+      "mean": 0.6034,
+      "sd": 0.0074
+     },
+     "MCC": {
+      "mean": 0.6489,
+      "sd": 0.0061
+     }
+    },
+    {
+     "method": "VR-FraudNet",
+     "AUPRC": {
+      "mean": 0.7456,
+      "sd": 0.0049
+     },
+     "ROC-AUC": {
+      "mean": 0.9312,
+      "sd": 0.0025
+     },
+     "F1": {
+      "mean": 0.6878,
+      "sd": 0.0054
+     },
+     "Recall@top-1%": {
+      "mean": 0.6234,
+      "sd": 0.0071
+     },
+     "MCC": {
+      "mean": 0.6612,
+      "sd": 0.006
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,209 @@
+{
+ "title": "Parameter count, FLOP budget, and training wall-clock comparison.",
+ "columns": [
+  "#",
+  "Method",
+  "Trainable params (M)",
+  "Total params incl. frozen (M)",
+  "FLOPs / tx (G)",
+  "Train wall-clock"
+ ],
+ "rows": [
+  {
+   "_row": 1,
+   "#": {
+    "value": 1.0
+   },
+   "Method": "Logistic Regression",
+   "Trainable params (M)": {
+    "value": 0.0001
+   },
+   "Total params incl. frozen (M)": {
+    "value": 0.0001
+   },
+   "FLOPs / tx (G)": {
+    "value": 0.0
+   },
+   "Train wall-clock": {
+    "value": 0.4
+   }
+  },
+  {
+   "_row": 2,
+   "#": {
+    "value": 2.0
+   },
+   "Method": "Isolation Forest",
+   "Trainable params (M)": {
+    "value": 0.025
+   },
+   "Total params incl. frozen (M)": {
+    "value": 0.025
+   },
+   "FLOPs / tx (G)": {
+    "value": 0.0001
+   },
+   "Train wall-clock": {
+    "value": 0.5
+   }
+  },
+  {
+   "_row": 3,
+   "#": {
+    "value": 3.0
+   },
+   "Method": "MLP",
+   "Trainable params (M)": {
+    "value": 0.0823
+   },
+   "Total params incl. frozen (M)": {
+    "value": 0.0823
+   },
+   "FLOPs / tx (G)": {
+    "value": 0.0008
+   },
+   "Train wall-clock": {
+    "value": 1.8
+   }
+  },
+  {
+   "_row": 4,
+   "#": {
+    "value": 4.0
+   },
+   "Method": "1D-CNN",
+   "Trainable params (M)": {
+    "value": 0.7124
+   },
+   "Total params incl. frozen (M)": {
+    "value": 0.7124
+   },
+   "FLOPs / tx (G)": {
+    "value": 0.0034
+   },
+   "Train wall-clock": {
+    "value": 2.6
+   }
+  },
+  {
+   "_row": 5,
+   "#": {
+    "value": 5.0
+   },
+   "Method": "LSTM",
+   "Trainable params (M)": {
+    "value": 0.2589
+   },
+   "Total params incl. frozen (M)": {
+    "value": 0.2589
+   },
+   "FLOPs / tx (G)": {
+    "value": 0.0021
+   },
+   "Train wall-clock": {
+    "value": 3.4
+   }
+  },
+  {
+   "_row": 6,
+   "#": {
+    "value": 6.0
+   },
+   "Method": "Random Forest",
+   "Trainable params (M)": {
+    "value": 0.05
+   },
+   "Total params incl. frozen (M)": {
+    "value": 0.05
+   },
+   "FLOPs / tx (G)": {
+    "value": 0.0002
+   },
+   "Train wall-clock": {
+    "value": 0.7
+   }
+  },
+  {
+   "_row": 7,
+   "#": {
+    "value": 7.0
+   },
+   "Method": "XGBoost",
+   "Trainable params (M)": {
+    "value": 0.025
+   },
+   "Total params incl. frozen (M)": {
+    "value": 0.025
+   },
+   "FLOPs / tx (G)": {
+    "value": 0.0001
+   },
+   "Train wall-clock": {
+    "value": 0.6
+   }
+  },
+  {
+   "_row": 8,
+   "#": {
+    "value": 8.0
+   },
+   "Method": "LightGBM",
+   "Trainable params (M)": {
+    "value": 0.0245
+   },
+   "Total params incl. frozen (M)": {
+    "value": 0.0245
+   },
+   "FLOPs / tx (G)": {
+    "value": 0.0001
+   },
+   "Train wall-clock": {
+    "value": 0.5
+   }
+  },
+  {
+   "_row": 9,
+   "#": {
+    "value": 9.0
+   },
+   "Method": "TabTransformer",
+   "Trainable params (M)": {
+    "value": 9.8345
+   },
+   "Total params incl. frozen (M)": {
+    "value": 9.8345
+   },
+   "FLOPs / tx (G)": {
+    "value": 0.4823
+   },
+   "Train wall-clock": {
+    "value": 6.8
+   }
+  },
+  {
+   "_row": 10,
+   "#": {
+    "value": 10.0
+   },
+   "Method": "VR-FraudNet",
+   "Trainable params (M)": {
+    "value": 1.0234
+   },
+   "Total params incl. frozen (M)": {
+    "value": 8010.24
+   },
+   "FLOPs / tx (G)": {
+    "value": 0.82
+   },
+   "Train wall-clock": {
+    "value": 22.6
+   }
+  }
+ ],
+ "source": {
+  "document": "Supplementary Material 1 (44163_2026_2355_MOESM1_ESM.docx)",
+  "table": "Supplementary Table S3a",
+  "kind": "supplement_docx",
+  "row_index_base": 1
+ }
+}

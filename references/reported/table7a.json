@@ -1,0 +1,274 @@
+{
+ "source": {
+  "document": "Sourav et al., Discover Artificial Intelligence 6:1403 (2026), doi:10.1007/s44163-026-02355-0",
+  "page": 28,
+  "table": "Table 7a",
+  "kind": "main_text_table",
+  "transcribed_by": "tools/transcribe_reported.py"
+ },
+ "title": "Ablation and lambda sensitivity on D1 BAF Base",
+ "rows": [
+  {
+   "id": "A6",
+   "variant": "w/o Large LLM",
+   "AUPRC": {
+    "mean": 0.4969,
+    "sd": 0.0078
+   },
+   "ROC-AUC": {
+    "mean": 0.9036,
+    "sd": 0.004
+   },
+   "F1": {
+    "mean": 0.4944,
+    "sd": 0.0084
+   },
+   "Recall@top-1%": {
+    "mean": 0.6647,
+    "sd": 0.0118
+   },
+   "MCC": {
+    "mean": 0.4833,
+    "sd": 0.0089
+   },
+   "delta_auprc_pp": -2.78
+  },
+  {
+   "id": "A1",
+   "variant": "w/o Verifier V",
+   "AUPRC": {
+    "mean": 0.5029,
+    "sd": 0.0073
+   },
+   "ROC-AUC": {
+    "mean": 0.9061,
+    "sd": 0.0038
+   },
+   "F1": {
+    "mean": 0.499,
+    "sd": 0.0079
+   },
+   "Recall@top-1%": {
+    "mean": 0.6707,
+    "sd": 0.0112
+   },
+   "MCC": {
+    "mean": 0.4885,
+    "sd": 0.0084
+   },
+   "delta_auprc_pp": -2.18
+  },
+  {
+   "id": "A3",
+   "variant": "w/o Schema",
+   "AUPRC": {
+    "mean": 0.508,
+    "sd": 0.0071
+   },
+   "ROC-AUC": {
+    "mean": 0.9084,
+    "sd": 0.0036
+   },
+   "F1": {
+    "mean": 0.5045,
+    "sd": 0.0076
+   },
+   "Recall@top-1%": {
+    "mean": 0.6765,
+    "sd": 0.0108
+   },
+   "MCC": {
+    "mean": 0.4929,
+    "sd": 0.0081
+   },
+   "delta_auprc_pp": -1.67
+  },
+  {
+   "id": "A2",
+   "variant": "w/o Triage Tθ",
+   "AUPRC": {
+    "mean": 0.5149,
+    "sd": 0.007
+   },
+   "ROC-AUC": {
+    "mean": 0.9111,
+    "sd": 0.0035
+   },
+   "F1": {
+    "mean": 0.5101,
+    "sd": 0.0074
+   },
+   "Recall@top-1%": {
+    "mean": 0.6823,
+    "sd": 0.0106
+   },
+   "MCC": {
+    "mean": 0.4982,
+    "sd": 0.0079
+   },
+   "delta_auprc_pp": -0.98
+  },
+  {
+   "id": "A9",
+   "variant": "w/o Counterfactual loss",
+   "AUPRC": {
+    "mean": 0.5158,
+    "sd": 0.0067
+   },
+   "ROC-AUC": {
+    "mean": 0.9118,
+    "sd": 0.0034
+   },
+   "F1": {
+    "mean": 0.5108,
+    "sd": 0.0072
+   },
+   "Recall@top-1%": {
+    "mean": 0.6831,
+    "sd": 0.0104
+   },
+   "MCC": {
+    "mean": 0.4989,
+    "sd": 0.0078
+   },
+   "delta_auprc_pp": -0.89
+  },
+  {
+   "id": "A4",
+   "variant": "w/o Adversarial training",
+   "AUPRC": {
+    "mean": 0.5189,
+    "sd": 0.0064
+   },
+   "ROC-AUC": {
+    "mean": 0.9128,
+    "sd": 0.0033
+   },
+   "F1": {
+    "mean": 0.5142,
+    "sd": 0.0069
+   },
+   "Recall@top-1%": {
+    "mean": 0.6864,
+    "sd": 0.0099
+   },
+   "MCC": {
+    "mean": 0.5021,
+    "sd": 0.0075
+   },
+   "delta_auprc_pp": -0.58
+  },
+  {
+   "id": "A7",
+   "variant": "w/o Learned mixer",
+   "AUPRC": {
+    "mean": 0.5199,
+    "sd": 0.0063
+   },
+   "ROC-AUC": {
+    "mean": 0.9134,
+    "sd": 0.0032
+   },
+   "F1": {
+    "mean": 0.5152,
+    "sd": 0.0068
+   },
+   "Recall@top-1%": {
+    "mean": 0.6873,
+    "sd": 0.0098
+   },
+   "MCC": {
+    "mean": 0.5028,
+    "sd": 0.0074
+   },
+   "delta_auprc_pp": -0.48
+  },
+  {
+   "id": "A5",
+   "variant": "w/o Cost-sensitive loss",
+   "AUPRC": {
+    "mean": 0.5213,
+    "sd": 0.0061
+   },
+   "ROC-AUC": {
+    "mean": 0.9141,
+    "sd": 0.0031
+   },
+   "F1": {
+    "mean": 0.5161,
+    "sd": 0.0066
+   },
+   "Recall@top-1%": {
+    "mean": 0.6889,
+    "sd": 0.0096
+   },
+   "MCC": {
+    "mean": 0.5042,
+    "sd": 0.0072
+   },
+   "delta_auprc_pp": -0.34
+  },
+  {
+   "id": "A8",
+   "variant": "lambda sensitivity ±50%",
+   "AUPRC": [
+    0.5231,
+    0.5205,
+    0.5158
+   ],
+   "ROC-AUC": [
+    0.9148,
+    0.9136,
+    0.9122
+   ],
+   "F1": [
+    0.5172,
+    0.5157,
+    0.5126
+   ],
+   "Recall@top-1%": [
+    0.6898,
+    0.6872,
+    0.6843
+   ],
+   "MCC": [
+    0.5049,
+    0.5017,
+    0.4998
+   ],
+   "delta_auprc_pp": [
+    -0.16,
+    -0.42,
+    -0.89
+   ]
+  },
+  {
+   "id": "Full",
+   "variant": "Full VR-FraudNet",
+   "AUPRC": {
+    "mean": 0.5247,
+    "sd": 0.0058
+   },
+   "ROC-AUC": {
+    "mean": 0.9156,
+    "sd": 0.003
+   },
+   "F1": {
+    "mean": 0.5181,
+    "sd": 0.0063
+   },
+   "Recall@top-1%": {
+    "mean": 0.6912,
+    "sd": 0.0092
+   },
+   "MCC": {
+    "mean": 0.5063,
+    "sd": 0.0069
+   },
+   "delta_auprc_pp": 0.0
+  }
+ ],
+ "qualifiers": [
+  "A8 cells are three values as printed (the -50% / +50% / ... ordering is not labelled in the paper)"
+ ]
+}

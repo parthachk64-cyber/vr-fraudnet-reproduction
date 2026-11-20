@@ -1,0 +1,69 @@
+{
+ "title": "Disparate-impact ratio under the four-fifths rule.",
+ "columns": [
+  "Variant",
+  "LightGBM",
+  "TabTransformer",
+  "Full VR-FraudNet"
+ ],
+ "rows": [
+  {
+   "_row": 1,
+   "Variant": "I",
+   "LightGBM": {
+    "value": 0.71
+   },
+   "TabTransformer": {
+    "value": 0.74
+   },
+   "Full VR-FraudNet": {
+    "value": 0.83
+   }
+  },
+  {
+   "_row": 2,
+   "Variant": "II",
+   "LightGBM": {
+    "value": 0.68
+   },
+   "TabTransformer": {
+    "value": 0.72
+   },
+   "Full VR-FraudNet": {
+    "value": 0.81
+   }
+  },
+  {
+   "_row": 3,
+   "Variant": "IV",
+   "LightGBM": {
+    "value": 0.65
+   },
+   "TabTransformer": {
+    "value": 0.69
+   },
+   "Full VR-FraudNet": {
+    "value": 0.78
+   }
+  },
+  {
+   "_row": 4,
+   "Variant": "V",
+   "LightGBM": {
+    "value": 0.78
+   },
+   "TabTransformer": {
+    "value": 0.81
+   },
+   "Full VR-FraudNet": {
+    "value": 0.85
+   }
+  }
+ ],
+ "source": {
+  "document": "Supplementary Material 1 (44163_2026_2355_MOESM1_ESM.docx)",
+  "table": "Supplementary Table S2b",
+  "kind": "supplement_docx",
+  "row_index_base": 1
+ }
+}

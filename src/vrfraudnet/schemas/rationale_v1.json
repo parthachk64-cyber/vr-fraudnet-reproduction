@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/parthachk64-cyber/vr-fraudnet-reproduction/schemas/rationale_v1.json",
+  "title": "VR-FraudNet structured rationale, version 1 (companion implementation; see docs/DECISIONS.md D-03)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["verdict", "probability", "claims", "evidence_refs"],
+  "properties": {
+    "verdict": { "enum": ["fraud", "legitimate", "uncertain"] },
+    "probability": { "type": "number", "minimum": 0, "maximum": 1 },
+    "claims": { "type": "array", "maxItems": 8, "items": { "$ref": "#/$defs/claim" } },
+    "evidence_refs": {
+      "type": "array", "maxItems": 8, "uniqueItems": true,
+      "items": { "$ref": "#/$defs/evidence_id" }
+    }
+  },
+  "$defs": {
+    "evidence_id": { "type": "string", "pattern": "^[A-Za-z0-9_:.-]{1,64}$" },
+    "field_name": { "type": "string", "pattern": "^[a-z][a-z0-9_]{0,63}$" },
+    "scalar": { "type": ["number", "string"] },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "field", "op", "value", "evidence_id"],
+      "properties": {
+        "type": { "enum": ["numeric_comparison", "set_membership", "temporal_relation", "graph_path", "entity_match"] },
+        "field": { "$ref": "#/$defs/field_name" },
+        "op": { "enum": ["<", "<=", ">", ">=", "==", "!=", "in", "not_in", "before", "after", "within", "path_exists", "path_absent"] },
+        "value": {
+          "oneOf": [
+            { "type": "number" },
+            { "type": "string", "maxLength": 64 },
+            { "type": "array", "minItems": 1, "maxItems": 4, "items": { "$ref": "#/$defs/scalar" } }
+          ]
+        },
+        "evidence_id": { "$ref": "#/$defs/evidence_id" }
+      },
+      "allOf": [
+        { "if": { "properties": { "type": { "const": "numeric_comparison" } } },
+          "then": { "properties": { "op": { "enum": ["<", "<=", ">", ">=", "==", "!="] }, "value": { "type": "number" } } } },
+        { "if": { "properties": { "type": { "const": "set_membership" } } },
+          "then": { "properties": { "op": { "enum": ["in", "not_in"] }, "value": { "type": "array" } } } },
+        { "if": { "properties": { "type": { "const": "temporal_relation" } } },
+          "then": { "properties": { "op": { "enum": ["before", "after", "within"] } } } },
+        { "if": { "properties": { "type": { "const": "graph_path" } } },
+          "then": { "properties": { "op": { "enum": ["path_exists", "path_absent"] }, "value": { "type": "array" } } } },
+        { "if": { "properties": { "type": { "const": "entity_match" } } },
+          "then": { "properties": { "op": { "enum": ["==", "!="] }, "value": { "type": "string" } } } }
+      ]
+    }
+  }
+}

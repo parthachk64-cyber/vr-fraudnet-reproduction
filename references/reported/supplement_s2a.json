@@ -1,0 +1,210 @@
+{
+ "title": "Subgroup AUPRC parity across protected and reference age groups.",
+ "columns": [
+  "Variant",
+  "Method",
+  "AUPRC protected age >= 50",
+  "AUPRC reference age < 50",
+  "Gap (pp)"
+ ],
+ "rows": [
+  {
+   "_row": 1,
+   "Variant": "I",
+   "Method": "LightGBM",
+   "AUPRC protected age >= 50": {
+    "value": 0.4523,
+    "sd": 0.0102
+   },
+   "AUPRC reference age < 50": {
+    "value": 0.4912,
+    "sd": 0.0073
+   },
+   "Gap (pp)": {
+    "value": -3.89
+   }
+  },
+  {
+   "_row": 2,
+   "Variant": "I",
+   "Method": "TabTransformer",
+   "AUPRC protected age >= 50": {
+    "value": 0.4734,
+    "sd": 0.0094
+   },
+   "AUPRC reference age < 50": {
+    "value": 0.5089,
+    "sd": 0.0067
+   },
+   "Gap (pp)": {
+    "value": -3.55
+   }
+  },
+  {
+   "_row": 3,
+   "Variant": "I",
+   "Method": "Full VR-FraudNet",
+   "AUPRC protected age >= 50": {
+    "value": 0.5098,
+    "sd": 0.0078
+   },
+   "AUPRC reference age < 50": {
+    "value": 0.5312,
+    "sd": 0.0058
+   },
+   "Gap (pp)": {
+    "value": -2.14
+   }
+  },
+  {
+   "_row": 4,
+   "Variant": "II",
+   "Method": "LightGBM",
+   "AUPRC protected age >= 50": {
+    "value": 0.4234,
+    "sd": 0.0118
+   },
+   "AUPRC reference age < 50": {
+    "value": 0.4823,
+    "sd": 0.0078
+   },
+   "Gap (pp)": {
+    "value": -5.89
+   }
+  },
+  {
+   "_row": 5,
+   "Variant": "II",
+   "Method": "TabTransformer",
+   "AUPRC protected age >= 50": {
+    "value": 0.4467,
+    "sd": 0.0108
+   },
+   "AUPRC reference age < 50": {
+    "value": 0.4978,
+    "sd": 0.0072
+   },
+   "Gap (pp)": {
+    "value": -5.11
+   }
+  },
+  {
+   "_row": 6,
+   "Variant": "II",
+   "Method": "Full VR-FraudNet",
+   "AUPRC protected age >= 50": {
+    "value": 0.4923,
+    "sd": 0.0089
+   },
+   "AUPRC reference age < 50": {
+    "value": 0.5278,
+    "sd": 0.0061
+   },
+   "Gap (pp)": {
+    "value": -3.55
+   }
+  },
+  {
+   "_row": 7,
+   "Variant": "IV",
+   "Method": "LightGBM",
+   "AUPRC protected age >= 50": {
+    "value": 0.4187,
+    "sd": 0.0125
+   },
+   "AUPRC reference age < 50": {
+    "value": 0.5012,
+    "sd": 0.007
+   },
+   "Gap (pp)": {
+    "value": -8.25
+   }
+  },
+  {
+   "_row": 8,
+   "Variant": "IV",
+   "Method": "TabTransformer",
+   "AUPRC protected age >= 50": {
+    "value": 0.4423,
+    "sd": 0.0114
+   },
+   "AUPRC reference age < 50": {
+    "value": 0.5198,
+    "sd": 0.0064
+   },
+   "Gap (pp)": {
+    "value": -7.75
+   }
+  },
+  {
+   "_row": 9,
+   "Variant": "IV",
+   "Method": "Full VR-FraudNet",
+   "AUPRC protected age >= 50": {
+    "value": 0.4845,
+    "sd": 0.0094
+   },
+   "AUPRC reference age < 50": {
+    "value": 0.5389,
+    "sd": 0.0058
+   },
+   "Gap (pp)": {
+    "value": -5.44
+   }
+  },
+  {
+   "_row": 10,
+   "Variant": "V",
+   "Method": "LightGBM",
+   "AUPRC protected age >= 50": {
+    "value": 0.4634,
+    "sd": 0.0098
+   },
+   "AUPRC reference age < 50": {
+    "value": 0.4823,
+    "sd": 0.0078
+   },
+   "Gap (pp)": {
+    "value": -1.89
+   }
+  },
+  {
+   "_row": 11,
+   "Variant": "V",
+   "Method": "TabTransformer",
+   "AUPRC protected age >= 50": {
+    "value": 0.4823,
+    "sd": 0.0089
+   },
+   "AUPRC reference age < 50": {
+    "value": 0.5034,
+    "sd": 0.0072
+   },
+   "Gap (pp)": {
+    "value": -2.11
+   }
+  },
+  {
+   "_row": 12,
+   "Variant": "V",
+   "Method": "Full VR-FraudNet",
+   "AUPRC protected age >= 50": {
+    "value": 0.5198,
+    "sd": 0.0072
+   },
+   "AUPRC reference age < 50": {
+    "value": 0.5298,
+    "sd": 0.0058
+   },
+   "Gap (pp)": {
+    "value": -1.0
+   }
+  }
+ ],
+ "source": {
+  "document": "Supplementary Material 1 (44163_2026_2355_MOESM1_ESM.docx)",
+  "table": "Supplementary Table S2a",
+  "kind": "supplement_docx",
+  "row_index_base": 1
+ }
+}

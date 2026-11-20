@@ -1,0 +1,330 @@
+{
+ "source": {
+  "document": "Sourav et al., Discover Artificial Intelligence 6:1403 (2026), doi:10.1007/s44163-026-02355-0",
+  "page": 33,
+  "table": "Table 9a-c",
+  "kind": "main_text_table",
+  "transcribed_by": "tools/transcribe_reported.py"
+ },
+ "qualifiers": [
+  "The dataset(s) behind Table 9 are not named in the paper.",
+  "Columns: split, delay, mule, feature-perturbation (families e1, e2, e3, e5); e4 (injection) is excluded for structured models."
+ ],
+ "panels": {
+  "9a": {
+   "title": "budget B = 1",
+   "rows": [
+    {
+     "method": "LightGBM",
+     "split": {
+      "mean": 0.3245,
+      "sd": 0.0148
+     },
+     "delay": {
+      "mean": 0.1823,
+      "sd": 0.0124
+     },
+     "mule": {
+      "mean": 0.4567,
+      "sd": 0.0162
+     },
+     "feat": {
+      "mean": 0.2089,
+      "sd": 0.0132
+     },
+     "mean": 0.2931
+    },
+    {
+     "method": "TabTransformer",
+     "split": {
+      "mean": 0.2812,
+      "sd": 0.0136
+     },
+     "delay": {
+      "mean": 0.1534,
+      "sd": 0.0113
+     },
+     "mule": {
+      "mean": 0.4234,
+      "sd": 0.0152
+     },
+     "feat": {
+      "mean": 0.1789,
+      "sd": 0.0124
+     },
+     "mean": 0.2592
+    },
+    {
+     "method": "A1 w/o Verifier V",
+     "split": {
+      "mean": 0.1812,
+      "sd": 0.0114
+     },
+     "delay": {
+      "mean": 0.1187,
+      "sd": 0.0098
+     },
+     "mule": {
+      "mean": 0.3387,
+      "sd": 0.0138
+     },
+     "feat": {
+      "mean": 0.1378,
+      "sd": 0.0103
+     },
+     "mean": 0.1941
+    },
+    {
+     "method": "A4 w/o Adversarial training",
+     "split": {
+      "mean": 0.3089,
+      "sd": 0.0142
+     },
+     "delay": {
+      "mean": 0.1923,
+      "sd": 0.0126
+     },
+     "mule": {
+      "mean": 0.4498,
+      "sd": 0.0156
+     },
+     "feat": {
+      "mean": 0.276,
+      "sd": 0.0128
+     },
+     "mean": 0.3068
+    },
+    {
+     "method": "Full VR-FraudNet",
+     "split": {
+      "mean": 0.0689,
+      "sd": 0.0058
+     },
+     "delay": {
+      "mean": 0.0487,
+      "sd": 0.0049
+     },
+     "mule": {
+      "mean": 0.0892,
+      "sd": 0.0064
+     },
+     "feat": {
+      "mean": 0.0598,
+      "sd": 0.0053
+     },
+     "mean": 0.0667
+    }
+   ]
+  },
+  "9b": {
+   "title": "budget B = 2",
+   "rows": [
+    {
+     "method": "LightGBM",
+     "split": {
+      "mean": 0.4523,
+      "sd": 0.0162
+     },
+     "delay": {
+      "mean": 0.2789,
+      "sd": 0.0142
+     },
+     "mule": {
+      "mean": 0.5823,
+      "sd": 0.0178
+     },
+     "feat": {
+      "mean": 0.3445,
+      "sd": 0.0148
+     },
+     "mean": 0.4145
+    },
+    {
+     "method": "TabTransformer",
+     "split": {
+      "mean": 0.4123,
+      "sd": 0.0156
+     },
+     "delay": {
+      "mean": 0.2434,
+      "sd": 0.0136
+     },
+     "mule": {
+      "mean": 0.5398,
+      "sd": 0.0172
+     },
+     "feat": {
+      "mean": 0.2812,
+      "sd": 0.0142
+     },
+     "mean": 0.3692
+    },
+    {
+     "method": "A1 w/o Verifier V",
+     "split": {
+      "mean": 0.2812,
+      "sd": 0.0136
+     },
+     "delay": {
+      "mean": 0.2089,
+      "sd": 0.0124
+     },
+     "mule": {
+      "mean": 0.4623,
+      "sd": 0.0162
+     },
+     "feat": {
+      "mean": 0.2434,
+      "sd": 0.0132
+     },
+     "mean": 0.299
+    },
+    {
+     "method": "A4 w/o Adversarial training",
+     "split": {
+      "mean": 0.4187,
+      "sd": 0.0156
+     },
+     "delay": {
+      "mean": 0.3098,
+      "sd": 0.0142
+     },
+     "mule": {
+      "mean": 0.5634,
+      "sd": 0.0172
+     },
+     "feat": {
+      "mean": 0.3398,
+      "sd": 0.0148
+     },
+     "mean": 0.4079
+    },
+    {
+     "method": "Full VR-FraudNet",
+     "split": {
+      "mean": 0.1089,
+      "sd": 0.0072
+     },
+     "delay": {
+      "mean": 0.0789,
+      "sd": 0.0062
+     },
+     "mule": {
+      "mean": 0.1287,
+      "sd": 0.0078
+     },
+     "feat": {
+      "mean": 0.0898,
+      "sd": 0.0067
+     },
+     "mean": 0.1016
+    }
+   ]
+  },
+  "9c": {
+   "title": "budget B = 4",
+   "rows": [
+    {
+     "method": "LightGBM",
+     "split": {
+      "mean": 0.6234,
+      "sd": 0.0184
+     },
+     "delay": {
+      "mean": 0.4523,
+      "sd": 0.0167
+     },
+     "mule": {
+      "mean": 0.7234,
+      "sd": 0.0198
+     },
+     "feat": {
+      "mean": 0.5039,
+      "sd": 0.0173
+     },
+     "mean": 0.5758
+    },
+    {
+     "method": "TabTransformer",
+     "split": {
+      "mean": 0.5812,
+      "sd": 0.0178
+     },
+     "delay": {
+      "mean": 0.4123,
+      "sd": 0.0162
+     },
+     "mule": {
+      "mean": 0.6812,
+      "sd": 0.0192
+     },
+     "feat": {
+      "mean": 0.4734,
+      "sd": 0.0167
+     },
+     "mean": 0.537
+    },
+    {
+     "method": "A1 w/o Verifier V",
+     "split": {
+      "mean": 0.4187,
+      "sd": 0.0162
+     },
+     "delay": {
+      "mean": 0.3623,
+      "sd": 0.0152
+     },
+     "mule": {
+      "mean": 0.6234,
+      "sd": 0.0184
+     },
+     "feat": {
+      "mean": 0.4089,
+      "sd": 0.0162
+     },
+     "mean": 0.4533
+    },
+    {
+     "method": "A4 w/o Adversarial training",
+     "split": {
+      "mean": 0.5812,
+      "sd": 0.0178
+     },
+     "delay": {
+      "mean": 0.4612,
+      "sd": 0.0167
+     },
+     "mule": {
+      "mean": 0.6912,
+      "sd": 0.0192
+     },
+     "feat": {
+      "mean": 0.4923,
+      "sd": 0.0173
+     },
+     "mean": 0.5565
+    },
+    {
+     "method": "Full VR-FraudNet",
+     "split": {
+      "mean": 0.1812,
+      "sd": 0.0098
+     },
+     "delay": {
+      "mean": 0.1289,
+      "sd": 0.0084
+     },
+     "mule": {
+      "mean": 0.2098,
+      "sd": 0.0108
+     },
+     "feat": {
+      "mean": 0.1487,
+      "sd": 0.0094
+     },
+     "mean": 0.1672
+    }
+   ]
+  }
+ }
+}

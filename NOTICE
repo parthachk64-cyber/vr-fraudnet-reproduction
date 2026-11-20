@@ -1,0 +1,15 @@
+vr-fraudnet-reproduction
+
+No source code, rule file, JSON schema or asset from the upstream repository
+https://github.com/abdulbasit12312/VR-FraudNet (MIT, "Copyright (c) 2026 The
+VR-FraudNet authors") is copied into this repository. It was examined for
+provenance and comparison only (docs/UPSTREAM.md). If any upstream material is
+ever adopted, it must be listed here with its license notice.
+
+The article, its supplement and the datasets it uses belong to their respective
+owners. Datasets are not redistributed; each must be obtained under its
+provider's terms (docs/DATA.md). Meta-Llama-3.1-8B-Instruct is gated and is
+subject to the Llama 3.1 Community License.
+
+Values under references/reported/ are transcribed from the published article and
+supplement for comparison and auditing only.

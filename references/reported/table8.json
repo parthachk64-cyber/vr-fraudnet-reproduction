@@ -1,0 +1,424 @@
+{
+ "source": {
+  "document": "Sourav et al., Discover Artificial Intelligence 6:1403 (2026), doi:10.1007/s44163-026-02355-0",
+  "page": 31,
+  "table": "Table 8a-d",
+  "kind": "main_text_table",
+  "transcribed_by": "tools/transcribe_reported.py"
+ },
+ "panels": {
+  "8a": {
+   "title": "D1 BAF Base controlled month drift",
+   "qualifiers": [
+    "The 'Train AUPRC' column equals the Table 5a TEST AUPRC for the same models; its reference is ambiguous."
+   ],
+   "rows": [
+    {
+     "method": "LightGBM",
+     "train_auprc": {
+      "mean": 0.4912,
+      "sd": 0.0064
+     },
+     "test_m6": {
+      "mean": 0.4534,
+      "sd": 0.0073
+     },
+     "delta_m6_pp": -3.78,
+     "test_m7": {
+      "mean": 0.4287,
+      "sd": 0.0079
+     },
+     "delta_m7_pp": -6.25
+    },
+    {
+     "method": "TabTransformer",
+     "train_auprc": {
+      "mean": 0.5012,
+      "sd": 0.0061
+     },
+     "test_m6": {
+      "mean": 0.4687,
+      "sd": 0.0069
+     },
+     "delta_m6_pp": -3.25,
+     "test_m7": {
+      "mean": 0.4456,
+      "sd": 0.0075
+     },
+     "delta_m7_pp": -5.56
+    },
+    {
+     "method": "A1 w/o Verifier V",
+     "train_auprc": {
+      "mean": 0.5029,
+      "sd": 0.0073
+     },
+     "test_m6": {
+      "mean": 0.4756,
+      "sd": 0.0078
+     },
+     "delta_m6_pp": -2.73,
+     "test_m7": {
+      "mean": 0.4642,
+      "sd": 0.0084
+     },
+     "delta_m7_pp": -3.87
+    },
+    {
+     "method": "A4 w/o Adversarial training",
+     "train_auprc": {
+      "mean": 0.5189,
+      "sd": 0.0064
+     },
+     "test_m6": {
+      "mean": 0.4934,
+      "sd": 0.007
+     },
+     "delta_m6_pp": -2.55,
+     "test_m7": {
+      "mean": 0.4756,
+      "sd": 0.0076
+     },
+     "delta_m7_pp": -4.33
+    },
+    {
+     "method": "A9 w/o Counterfactual loss",
+     "train_auprc": {
+      "mean": 0.5158,
+      "sd": 0.0067
+     },
+     "test_m6": {
+      "mean": 0.4845,
+      "sd": 0.0072
+     },
+     "delta_m6_pp": -3.13,
+     "test_m7": {
+      "mean": 0.4663,
+      "sd": 0.0078
+     },
+     "delta_m7_pp": -4.95
+    },
+    {
+     "method": "Full VR-FraudNet",
+     "train_auprc": {
+      "mean": 0.5247,
+      "sd": 0.0058
+     },
+     "test_m6": {
+      "mean": 0.5089,
+      "sd": 0.0061
+     },
+     "delta_m6_pp": -1.58,
+     "test_m7": {
+      "mean": 0.4945,
+      "sd": 0.0066
+     },
+     "delta_m7_pp": -3.02
+    }
+   ]
+  },
+  "8b": {
+   "title": "D3 five-fold expanding window (Fold 3 = primary holdout)",
+   "rows": [
+    {
+     "method": "LightGBM",
+     "fold1": {
+      "mean": 0.6712,
+      "sd": 0.0072
+     },
+     "fold2": {
+      "mean": 0.6823,
+      "sd": 0.0068
+     },
+     "fold3": {
+      "mean": 0.7087,
+      "sd": 0.0053
+     },
+     "fold4": {
+      "mean": 0.7012,
+      "sd": 0.0061
+     },
+     "fold5": {
+      "mean": 0.6967,
+      "sd": 0.0065
+     },
+     "mean_across_folds_descriptive": 0.692,
+     "late_delta_f5_minus_f3_pp": -1.2
+    },
+    {
+     "method": "TabTransformer",
+     "fold1": {
+      "mean": 0.6989,
+      "sd": 0.0064
+     },
+     "fold2": {
+      "mean": 0.7123,
+      "sd": 0.0058
+     },
+     "fold3": {
+      "mean": 0.7234,
+      "sd": 0.0051
+     },
+     "fold4": {
+      "mean": 0.7187,
+      "sd": 0.0055
+     },
+     "fold5": {
+      "mean": 0.7156,
+      "sd": 0.0057
+     },
+     "mean_across_folds_descriptive": 0.7138,
+     "late_delta_f5_minus_f3_pp": -0.78
+    },
+    {
+     "method": "A1 w/o Verifier V",
+     "fold1": {
+      "mean": 0.7012,
+      "sd": 0.007
+     },
+     "fold2": {
+      "mean": 0.7156,
+      "sd": 0.0067
+     },
+     "fold3": {
+      "mean": 0.7298,
+      "sd": 0.0061
+     },
+     "fold4": {
+      "mean": 0.7234,
+      "sd": 0.0064
+     },
+     "fold5": {
+      "mean": 0.7178,
+      "sd": 0.0066
+     },
+     "mean_across_folds_descriptive": 0.7176,
+     "late_delta_f5_minus_f3_pp": -1.2
+    },
+    {
+     "method": "A4 w/o Adversarial training",
+     "fold1": {
+      "mean": 0.7156,
+      "sd": 0.0066
+     },
+     "fold2": {
+      "mean": 0.7287,
+      "sd": 0.0061
+     },
+     "fold3": {
+      "mean": 0.7398,
+      "sd": 0.0055
+     },
+     "fold4": {
+      "mean": 0.7345,
+      "sd": 0.0058
+     },
+     "fold5": {
+      "mean": 0.7298,
+      "sd": 0.006
+     },
+     "mean_across_folds_descriptive": 0.7297,
+     "late_delta_f5_minus_f3_pp": -1.0
+    },
+    {
+     "method": "A9 w/o Counterfactual loss",
+     "fold1": {
+      "mean": 0.7089,
+      "sd": 0.0068
+     },
+     "fold2": {
+      "mean": 0.7234,
+      "sd": 0.0064
+     },
+     "fold3": {
+      "mean": 0.7367,
+      "sd": 0.0058
+     },
+     "fold4": {
+      "mean": 0.7298,
+      "sd": 0.0061
+     },
+     "fold5": {
+      "mean": 0.7234,
+      "sd": 0.0064
+     },
+     "mean_across_folds_descriptive": 0.7244,
+     "late_delta_f5_minus_f3_pp": -1.33
+    },
+    {
+     "method": "Full VR-FraudNet",
+     "fold1": {
+      "mean": 0.7234,
+      "sd": 0.0058
+     },
+     "fold2": {
+      "mean": 0.7345,
+      "sd": 0.0054
+     },
+     "fold3": {
+      "mean": 0.7456,
+      "sd": 0.0049
+     },
+     "fold4": {
+      "mean": 0.7423,
+      "sd": 0.0051
+     },
+     "fold5": {
+      "mean": 0.7398,
+      "sd": 0.0053
+     },
+     "mean_across_folds_descriptive": 0.7371,
+     "late_delta_f5_minus_f3_pp": -0.58
+    }
+   ]
+  },
+  "8c": {
+   "title": "D4 Elliptic++ pre/post shock",
+   "rows": [
+    {
+     "method": "LightGBM",
+     "train_auprc": {
+      "mean": 0.5634,
+      "sd": 0.0078
+     },
+     "pre_shock": {
+      "mean": 0.5234,
+      "sd": 0.0088
+     },
+     "delta_pre_pp": -4.0,
+     "post_shock": {
+      "mean": 0.3534,
+      "sd": 0.0142
+     },
+     "delta_post_pp": -21.0,
+     "shock_impact_pp": -17.0
+    },
+    {
+     "method": "TabTransformer",
+     "train_auprc": {
+      "mean": 0.5612,
+      "sd": 0.0089
+     },
+     "pre_shock": {
+      "mean": 0.5398,
+      "sd": 0.0083
+     },
+     "delta_pre_pp": -2.14,
+     "post_shock": {
+      "mean": 0.3987,
+      "sd": 0.0134
+     },
+     "delta_post_pp": -16.25,
+     "shock_impact_pp": -14.11
+    },
+    {
+     "method": "A1 w/o Verifier V",
+     "train_auprc": {
+      "mean": 0.6712,
+      "sd": 0.0084
+     },
+     "pre_shock": {
+      "mean": 0.6298,
+      "sd": 0.008
+     },
+     "delta_pre_pp": -4.14,
+     "post_shock": {
+      "mean": 0.5567,
+      "sd": 0.0118
+     },
+     "delta_post_pp": -11.45,
+     "shock_impact_pp": -7.31
+    },
+    {
+     "method": "A4 w/o Adversarial training",
+     "train_auprc": {
+      "mean": 0.6612,
+      "sd": 0.0086
+     },
+     "pre_shock": {
+      "mean": 0.6234,
+      "sd": 0.0078
+     },
+     "delta_pre_pp": -3.78,
+     "post_shock": {
+      "mean": 0.5398,
+      "sd": 0.0124
+     },
+     "delta_post_pp": -12.14,
+     "shock_impact_pp": -8.36
+    },
+    {
+     "method": "A9 w/o Counterfactual loss",
+     "train_auprc": {
+      "mean": 0.6534,
+      "sd": 0.0083
+     },
+     "pre_shock": {
+      "mean": 0.6087,
+      "sd": 0.0083
+     },
+     "delta_pre_pp": -4.47,
+     "post_shock": {
+      "mean": 0.5034,
+      "sd": 0.0128
+     },
+     "delta_post_pp": -15.0,
+     "shock_impact_pp": -10.53
+    },
+    {
+     "method": "Full VR-FraudNet",
+     "train_auprc": {
+      "mean": 0.6823,
+      "sd": 0.0072
+     },
+     "pre_shock": {
+      "mean": 0.6534,
+      "sd": 0.007
+     },
+     "delta_pre_pp": -2.89,
+     "post_shock": {
+      "mean": 0.6087,
+      "sd": 0.0094
+     },
+     "delta_post_pp": -7.36,
+     "shock_impact_pp": -4.47
+    }
+   ]
+  },
+  "8d": {
+   "title": "D3 fold definitions",
+   "rows": [
+    {
+     "fold": 1,
+     "cut_quantile": 0.6,
+     "nominal_train_n": 354324,
+     "nominal_test_n": 236216
+    },
+    {
+     "fold": 2,
+     "cut_quantile": 0.7,
+     "nominal_train_n": 413378,
+     "nominal_test_n": 177162
+    },
+    {
+     "fold": 3,
+     "cut_quantile": 0.8,
+     "nominal_train_n": 472432,
+     "nominal_test_n": 118108
+    },
+    {
+     "fold": 4,
+     "cut_quantile": 0.85,
+     "nominal_train_n": 501959,
+     "nominal_test_n": 88581
+    },
+    {
+     "fold": 5,
+     "cut_quantile": 0.9,
+     "nominal_train_n": 531486,
+     "nominal_test_n": 59054
+    }
+   ]
+  }
+ }
+}

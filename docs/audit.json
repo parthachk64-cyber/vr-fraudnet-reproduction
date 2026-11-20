@@ -1,0 +1,350 @@
+[
+ {
+  "id": "A-01D1",
+  "severity": "info",
+  "status": "consistent",
+  "title": "Recall@top-1% ceiling on D1",
+  "detail": "Held-out positives P=2750 (S1 TP+FN), N=250000 (INFERRED: positives / 1.10% prevalence (Table 1); the partition size is not printed); partition prevalence 1.1000%; k=ceil(0.01N)=2500; ceiling=min(1,k/P)=0.9091. Printed Table 5a values above the ceiling: 0 of 10.",
+  "data": {
+   "positives": 2750,
+   "n": 250000,
+   "k": 2500,
+   "ceiling": 0.9090909090909091,
+   "partition_prevalence": 0.011,
+   "stated_dataset_prevalence_pct": 1.1,
+   "values_above": []
+  }
+ },
+ {
+  "id": "A-01D2",
+  "severity": "info",
+  "status": "consistent",
+  "title": "Recall@top-1% ceiling on D2",
+  "detail": "Held-out positives P=1016 (S1 TP+FN), N=1015669 (20% of 5,078,345 transactions (Table 1, 60/20/20 split)); partition prevalence 0.1000%; k=ceil(0.01N)=10157; ceiling=min(1,k/P)=1.0000. Printed Table 5b values above the ceiling: 0 of 10.",
+  "data": {
+   "positives": 1016,
+   "n": 1015669,
+   "k": 10157,
+   "ceiling": 1.0,
+   "partition_prevalence": 0.0010003258935735954,
+   "stated_dataset_prevalence_pct": 0.1,
+   "values_above": []
+  }
+ },
+ {
+  "id": "A-01D3",
+  "severity": "blocking",
+  "status": "inconsistent",
+  "title": "Recall@top-1% ceiling on D3",
+  "detail": "Held-out positives P=4134 (S1 TP+FN), N=118108 (partition size from Table 8d (fold 3 nominal test n)); partition prevalence 3.5002%; k=ceil(0.01N)=1182; ceiling=min(1,k/P)=0.2859. Printed Table 5c values above the ceiling: 10 of 10 (largest 0.6234, VR-FraudNet 0.6234).",
+  "data": {
+   "positives": 4134,
+   "n": 118108,
+   "k": 1182,
+   "ceiling": 0.28592162554426703,
+   "partition_prevalence": 0.035001862701933825,
+   "stated_dataset_prevalence_pct": 3.5,
+   "values_above": [
+    [
+     "Logistic regression",
+     0.4567
+    ],
+    [
+     "Isolation forest",
+     0.4234
+    ],
+    [
+     "MLP",
+     0.5234
+    ],
+    [
+     "1D-CNN",
+     0.5345
+    ],
+    [
+     "LSTM",
+     0.5478
+    ],
+    [
+     "Random forest",
+     0.5612
+    ],
+    [
+     "XGBoost",
+     0.5812
+    ],
+    [
+     "LightGBM",
+     0.5891
+    ],
+    [
+     "TabTransformer",
+     0.6034
+    ],
+    [
+     "VR-FraudNet",
+     0.6234
+    ]
+   ]
+  }
+ },
+ {
+  "id": "A-02",
+  "severity": "info",
+  "status": "consistent",
+  "title": "Table 6 mean AUPRC deltas vs Table 5",
+  "detail": "Mean of the three per-dataset AUPRC differences recomputed from Table 5 and compared with Table 6. All nine agree to within rounding.",
+  "data": {}
+ },
+ {
+  "id": "A-03",
+  "severity": "info",
+  "status": "consistent",
+  "title": "Table 6 Holm-adjusted p-values",
+  "detail": "Holm step-down recomputed from the printed raw p-values. All nine agree to 3 significant figures.",
+  "data": {}
+ },
+ {
+  "id": "A-04",
+  "severity": "minor",
+  "status": "inconsistent",
+  "title": "Table 6 raw p-values vs printed V (n=30, exact, no ties assumed)",
+  "detail": "Exact signed-rank tail P(V>=V_printed) compared with the printed raw p. The printed p-values do not belong to the printed V values for 3 baseline(s): [{'baseline': 'XGBoost', 'printed_V': 462, 'exact_p_for_printed_V': 4.6566128730773926e-09, 'printed_p': 1.86e-09, 'V_implied_by_printed_p': 464}, {'baseline': 'LightGBM', 'printed_V': 458, 'exact_p_for_printed_V': 1.7695128917694092e-08, 'printed_p': 4.66e-09, 'V_implied_by_printed_p': 462}, {'baseline': 'TabTransformer', 'printed_V': 442, 'exact_p_for_printed_V': 5.960464477539062e-07, 'printed_p': 1.4e-07, 'V_implied_by_printed_p': 450}]. No V is printed for: ['Logistic regression']. Both numbers are preserved; neither is corrected.",
+  "data": {
+   "missing_V": [
+    "Logistic regression"
+   ],
+   "mismatches": [
+    {
+     "baseline": "XGBoost",
+     "printed_V": 462,
+     "exact_p_for_printed_V": 4.6566128730773926e-09,
+     "printed_p": 1.86e-09,
+     "V_implied_by_printed_p": 464
+    },
+    {
+     "baseline": "LightGBM",
+     "printed_V": 458,
+     "exact_p_for_printed_V": 1.7695128917694092e-08,
+     "printed_p": 4.66e-09,
+     "V_implied_by_printed_p": 462
+    },
+    {
+     "baseline": "TabTransformer",
+     "printed_V": 442,
+     "exact_p_for_printed_V": 5.960464477539062e-07,
+     "printed_p": 1.4e-07,
+     "V_implied_by_printed_p": 450
+    }
+   ]
+  }
+ },
+ {
+  "id": "A-05",
+  "severity": "minor",
+  "status": "unresolvable",
+  "title": "Table 6 effect-size convention",
+  "detail": "The column is headed 'Effect size' with no named convention. Rank-biserial (W+ - W-)/(n(n+1)/2) and matched-pairs r = Z/sqrt(n) were each computed from the printed V; neither reproduces the printed values. (printed, rank-biserial, z/sqrt n): [('Isolation forest', 1.0, 1.0, 0.87), ('MLP', 0.96, 1.0, 0.87), ('1D-CNN', 0.94, 1.0, 0.87), ('LSTM', 0.91, 1.0, 0.87), ('Random Forest', 0.88, 1.0, 0.87), ('XGBoost', 0.83, 0.99, 0.86), ('LightGBM', 0.79, 0.97, 0.85), ('TabTransformer', 0.66, 0.9, 0.79)]",
+  "data": {
+   "rows": [
+    [
+     "Isolation forest",
+     1.0,
+     1.0,
+     0.87
+    ],
+    [
+     "MLP",
+     0.96,
+     1.0,
+     0.87
+    ],
+    [
+     "1D-CNN",
+     0.94,
+     1.0,
+     0.87
+    ],
+    [
+     "LSTM",
+     0.91,
+     1.0,
+     0.87
+    ],
+    [
+     "Random Forest",
+     0.88,
+     1.0,
+     0.87
+    ],
+    [
+     "XGBoost",
+     0.83,
+     0.99,
+     0.86
+    ],
+    [
+     "LightGBM",
+     0.79,
+     0.97,
+     0.85
+    ],
+    [
+     "TabTransformer",
+     0.66,
+     0.9,
+     0.79
+    ]
+   ]
+  }
+ },
+ {
+  "id": "A-06",
+  "severity": "info",
+  "status": "consistent",
+  "title": "Table 8a month-drift deltas",
+  "detail": "delta = 100 x (test month AUPRC - 'Train AUPRC' column). All 12 agree to rounding.",
+  "data": {}
+ },
+ {
+  "id": "A-07",
+  "severity": "minor",
+  "status": "note",
+  "title": "Table 8a reference column equals the Table 5a TEST AUPRC",
+  "detail": "The 'Train AUPRC' column of Table 8a equals the Table 5a AUPRC (a TEST-partition value, Sec. 3.8.3) for LightGBM, TabTransformer and VR-FraudNet. The column label and the stated reference ('training-reference period', Sec. 4.5) therefore disagree; drift is measured from the held-out value.",
+  "data": {}
+ },
+ {
+  "id": "A-08",
+  "severity": "info",
+  "status": "consistent",
+  "title": "Table 8b fold means and F5-F3 contrast",
+  "detail": "Five-fold mean and 100 x (Fold5 - Fold3) recomputed. All agree to rounding.",
+  "data": {}
+ },
+ {
+  "id": "A-09",
+  "severity": "info",
+  "status": "consistent",
+  "title": "Fold 3 equals the primary D3 holdout",
+  "detail": "Table 8b Fold 3 (q=0.80) equals Table 5c for VR-FraudNet, as the paper states, by construction.",
+  "data": {}
+ },
+ {
+  "id": "A-10",
+  "severity": "info",
+  "status": "consistent",
+  "title": "Table 8c shock deltas and impact",
+  "detail": "Each contrast uses its own reference (train, pre-shock). All 18 agree to rounding.",
+  "data": {}
+ },
+ {
+  "id": "A-11",
+  "severity": "info",
+  "status": "note",
+  "title": "D4 post-shock degradation vs the 5-point target",
+  "detail": "Train reference 0.6823 -> post-shock 0.6087 is 7.36 pp, which exceeds the paper's own 5 pp target; the paper states this openly and this repository preserves it.",
+  "data": {
+   "drop_pp": 7.359999999999999
+  }
+ },
+ {
+  "id": "A-12",
+  "severity": "info",
+  "status": "consistent",
+  "title": "Table 8d fold sizes",
+  "detail": "train + test per fold = [590540] (IEEE-CIS has 590,540 transactions).",
+  "data": {}
+ },
+ {
+  "id": "A-13",
+  "severity": "info",
+  "status": "consistent",
+  "title": "table7a AUPRC deltas vs the full model",
+  "detail": "delta = 100 x (variant - full). All agree to rounding.",
+  "data": {}
+ },
+ {
+  "id": "A-14",
+  "severity": "info",
+  "status": "consistent",
+  "title": "table7b AUPRC deltas vs the full model",
+  "detail": "delta = 100 x (variant - full). All agree to rounding.",
+  "data": {}
+ },
+ {
+  "id": "A-15",
+  "severity": "info",
+  "status": "consistent",
+  "title": "Table 9 row means",
+  "detail": "Mean of the four family rates recomputed. All 15 agree to 4 decimals.",
+  "data": {}
+ },
+ {
+  "id": "A-16",
+  "severity": "minor",
+  "status": "unresolvable",
+  "title": "Table 9 dataset and denominator",
+  "detail": "Table 9 does not name the dataset(s) behind the evasion rates, nor the denominator (all fraud, or fraud detected before the edit). The repository's robustness scorer takes both from the supplied benchmark file and reports them.",
+  "data": {}
+ },
+ {
+  "id": "A-17",
+  "severity": "info",
+  "status": "consistent",
+  "title": "Supplementary S1 cost arithmetic",
+  "detail": "Unit costs inferred from sums/counts are constant within each dataset; total loss and savings = 1 - total/(P x c_FN) reproduce every row. Inferred (c_FN, c_FP, c_TP-review): {'D1': (300.0, 5.0, 5.0), 'D2': (25000.0, 5.0, 5.0), 'D3': (150.0, 5.0, 5.0)}. ",
+  "data": {}
+ },
+ {
+  "id": "A-18",
+  "severity": "minor",
+  "status": "consistent",
+  "title": "Supplementary S2 gaps and ECE deltas",
+  "detail": "Recomputed from the printed columns. All agree.",
+  "data": {}
+ },
+ {
+  "id": "A-19",
+  "severity": "major",
+  "status": "inconsistent",
+  "title": "Supplementary S4a n_cal on D1 vs the described split",
+  "detail": "The conformal calibration set is the second half of the chronological VALIDATION segment, which is the last 10% of the training months (Table 1). D1 has 1,000,000 rows in total, so that half is at most 50,000 rows; S4a prints n_cal=100,000. Either n_cal was drawn differently from the described protocol or the split description is incomplete.",
+  "data": {
+   "max_possible": 50000,
+   "published": 100000.0
+  }
+ },
+ {
+  "id": "A-20",
+  "severity": "minor",
+  "status": "note",
+  "title": "Equation 5 is typeset incorrectly",
+  "detail": "As printed, 'reject' is assigned to P < T_high and the escalate branch reads T_low <= P >= T_high. Section 3.8.1 gives the intended rule (below T_low accept; above T_high reject; both endpoints in the review band). This repository implements the Section 3.8.1 rule.",
+  "data": {}
+ },
+ {
+  "id": "A-21",
+  "severity": "minor",
+  "status": "note",
+  "title": "LoRA learning rate typeset as '2 x 10^4'",
+  "detail": "Section 3.3.1 prints 2 x 10^4 (a typesetting loss); Section 3.8.1 prints 0.0002. This repository uses 2e-4.",
+  "data": {}
+ },
+ {
+  "id": "A-22",
+  "severity": "minor",
+  "status": "note",
+  "title": "Feature counts",
+  "detail": "Table 1/2 state 30 input features for D1 after excluding fraud_bool and protected attributes; the raw BAF base file has 30 features plus the label and month, so excluding the protected attribute leaves 29. The realised count is reported by `vrfraudnet data check`, never padded.",
+  "data": {}
+ },
+ {
+  "id": "A-23",
+  "severity": "minor",
+  "status": "note",
+  "title": "Wilcoxon statistic missing for one baseline",
+  "detail": "Table 6 prints '-' for V of logistic regression (the maximum 465 is implied by p = 9.31e-10 = 2^-30).",
+  "data": {}
+ }
+]

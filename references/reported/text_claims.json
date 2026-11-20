@@ -1,0 +1,98 @@
+{
+ "source": {
+  "document": "Sourav et al., Discover Artificial Intelligence 6:1403 (2026), doi:10.1007/s44163-026-02355-0"
+ },
+ "claims": [
+  {
+   "id": "abstract_d1_auprc",
+   "text": "VR-FraudNet D1 AUPRC 0.5247 vs TabTransformer 0.5012",
+   "page": 1,
+   "values": [
+    0.5247,
+    0.5012
+   ]
+  },
+  {
+   "id": "abstract_d2_auprc",
+   "text": "D2 AUPRC 0.5824 vs 0.5137",
+   "page": 1,
+   "values": [
+    0.5824,
+    0.5137
+   ]
+  },
+  {
+   "id": "abstract_d3_auprc",
+   "text": "D3 AUPRC 0.7456 vs 0.7234",
+   "page": 1,
+   "values": [
+    0.7456,
+    0.7234
+   ]
+  },
+  {
+   "id": "d4_post_shock",
+   "text": "D4 post-shock AUPRC 0.6823 -> 0.6087, absolute reduction 7.36 pp, exceeds the 5 pp target",
+   "page": 1,
+   "values": [
+    0.6823,
+    0.6087,
+    7.36
+   ]
+  },
+  {
+   "id": "evasion_means",
+   "text": "mean evasion rates 0.0667 / 0.1016 / 0.1672 for budgets 1 / 2 / 4",
+   "page": 1,
+   "values": [
+    0.0667,
+    0.1016,
+    0.1672
+   ]
+  },
+  {
+   "id": "p99_latency_ms",
+   "text": "p99 latency 10.23 ms common path, 175.23 ms escalation path",
+   "page": 1,
+   "values": [
+    10.23,
+    175.23
+   ]
+  },
+  {
+   "id": "latency_protocol",
+   "text": "batch size 1; 1,000 warm-up; 10,000 timed; GPU synchronised; A100 80 GB",
+   "page": 23,
+   "values": [
+    1,
+    1000,
+    10000
+   ]
+  },
+  {
+   "id": "conformal_alpha",
+   "text": "primary alpha 0.05, sensitivity alpha 0.10",
+   "page": 22,
+   "values": [
+    0.05,
+    0.1
+   ]
+  },
+  {
+   "id": "routing_thresholds",
+   "text": "D1 0.20/0.80, D2 0.15/0.85, D3 0.22/0.78, D4 0.18/0.82, D5 0.17/0.83",
+   "page": 22,
+   "values": []
+  },
+  {
+   "id": "cost_weights",
+   "text": "cost-sensitive 0.50, adversarial 0.50, counterfactual 0.25",
+   "page": 19,
+   "values": [
+    0.5,
+    0.5,
+    0.25
+   ]
+  }
+ ]
+}

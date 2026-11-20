@@ -1,0 +1,171 @@
+{
+ "title": "Cost-sensitive operational evaluation on D3 IEEE-CIS.",
+ "columns": [
+  "Method",
+  "TP",
+  "FN",
+  "FP",
+  "Sum FN loss",
+  "Sum FP loss",
+  "Sum TP review",
+  "Total loss",
+  "Savings (%)",
+  "Capacity Recall"
+ ],
+ "rows": [
+  {
+   "_row": 1,
+   "Method": "LightGBM",
+   "TP": {
+    "value": 3225.0
+   },
+   "FN": {
+    "value": 909.0
+   },
+   "FP": {
+    "value": 4838.0
+   },
+   "Sum FN loss": {
+    "value": 136350.0,
+    "unit": "USD"
+   },
+   "Sum FP loss": {
+    "value": 24190.0,
+    "unit": "USD"
+   },
+   "Sum TP review": {
+    "value": 16125.0,
+    "unit": "USD"
+   },
+   "Total loss": {
+    "value": 176665.0,
+    "unit": "USD"
+   },
+   "Savings (%)": {
+    "value": 71.51,
+    "sd": 1.58
+   },
+   "Capacity Recall": {
+    "value": 0.2312,
+    "sd": 0.0083
+   }
+  },
+  {
+   "_row": 2,
+   "Method": "TabTransformer",
+   "TP": {
+    "value": 3431.0
+   },
+   "FN": {
+    "value": 703.0
+   },
+   "FP": {
+    "value": 4193.0
+   },
+   "Sum FN loss": {
+    "value": 105450.0,
+    "unit": "USD"
+   },
+   "Sum FP loss": {
+    "value": 20965.0,
+    "unit": "USD"
+   },
+   "Sum TP review": {
+    "value": 17155.0,
+    "unit": "USD"
+   },
+   "Total loss": {
+    "value": 143570.0,
+    "unit": "USD"
+   },
+   "Savings (%)": {
+    "value": 76.85,
+    "sd": 1.42
+   },
+   "Capacity Recall": {
+    "value": 0.2456,
+    "sd": 0.0078
+   }
+  },
+  {
+   "_row": 3,
+   "Method": "A5 w/o Cost-sensitive loss",
+   "TP": {
+    "value": 3514.0
+   },
+   "FN": {
+    "value": 620.0
+   },
+   "FP": {
+    "value": 4125.0
+   },
+   "Sum FN loss": {
+    "value": 93000.0,
+    "unit": "USD"
+   },
+   "Sum FP loss": {
+    "value": 20625.0,
+    "unit": "USD"
+   },
+   "Sum TP review": {
+    "value": 17570.0,
+    "unit": "USD"
+   },
+   "Total loss": {
+    "value": 131195.0,
+    "unit": "USD"
+   },
+   "Savings (%)": {
+    "value": 78.84,
+    "sd": 1.36
+   },
+   "Capacity Recall": {
+    "value": 0.2523,
+    "sd": 0.0075
+   }
+  },
+  {
+   "_row": 4,
+   "Method": "Full VR-FraudNet",
+   "TP": {
+    "value": 3638.0
+   },
+   "FN": {
+    "value": 496.0
+   },
+   "FP": {
+    "value": 3638.0
+   },
+   "Sum FN loss": {
+    "value": 74400.0,
+    "unit": "USD"
+   },
+   "Sum FP loss": {
+    "value": 18190.0,
+    "unit": "USD"
+   },
+   "Sum TP review": {
+    "value": 18190.0,
+    "unit": "USD"
+   },
+   "Total loss": {
+    "value": 110780.0,
+    "unit": "USD"
+   },
+   "Savings (%)": {
+    "value": 82.13,
+    "sd": 1.21
+   },
+   "Capacity Recall": {
+    "value": 0.2701,
+    "sd": 0.0067
+   }
+  }
+ ],
+ "source": {
+  "document": "Supplementary Material 1 (44163_2026_2355_MOESM1_ESM.docx)",
+  "table": "Supplementary Table S1c",
+  "kind": "supplement_docx",
+  "row_index_base": 1
+ }
+}
